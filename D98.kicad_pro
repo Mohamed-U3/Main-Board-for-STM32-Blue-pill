@@ -37,8 +37,8 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.95,
-          "height": 1.95,
+          "drill": 1.0,
+          "height": 1.7,
           "width": 1.7
         },
         "silk_line_width": 0.1,
@@ -510,10 +510,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "DXF output/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "3D output/D98.stl",
+      "step": "3D output/D98.step",
       "svg": "",
       "vrml": ""
     },

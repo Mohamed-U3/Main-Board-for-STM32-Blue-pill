@@ -2,8 +2,8 @@
 
 A custom PCB main board designed to extend JST cables for STM32F103C8T6 Blue Pill microcontroller board. This board provides organized connections for displays, sensors, buttons, and communication modules with proper ESD protection.
 
-![BoardFront](Images\1.png)
-![BoardFront](Images\2.png)
+![BoardFront](Images/1.png)
+![BoardFront](Images/2.png)
 
 ## 📋 Overview
 

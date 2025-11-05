@@ -32,7 +32,7 @@ Pin | Signal | STM32 Pin | Description
 3   | RES    | PA2       | Reset signal
 4   | CS     | PA4       | Chip Select
 5   | CLK    | PA5       | SPI Clock (SPI1_SCK)
-6   | EN     | PA6	 | Backlight control (always on)
+6   | EN     | PA3	 | Backlight control (always on)
 7   | MOSI   | PA7       | SPI Data Out (SPI1_MOSI)
 8   | GND    | GND       | Ground
 ```
@@ -319,7 +319,8 @@ Contributions are welcome! Please feel free to submit:
 - **v1.1** - Added ESD protection and improved routing
 - **v1.2** - Updated connector layout and pin assignments
 - **v2.0** - Updated connector layout, pin assignments, and silkscreen.
-- **v3.0** - Change the EN pin of the TFT from Vcc for full brightness always to be controlled via GPIO.
+- **v3.0** - Change the EN pin of the TFT from Vcc for full brightness always to be controlled via GPIO A6.
+- **v3.1** - Change the EN pin of the TFT to A3 because A6 is MISO pin.
 
 ## 📞 Support
 

@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "autotracking",
+			"path": "C:/Users/R_D_designer/Documents/PlatformIO/Projects/autotracking"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"io.h": "c",
+			"iom32.h": "c",
+			"systick.h": "c",
+			"rcc.h": "c",
+			"optional": "cpp",
+			"system_error": "cpp",
+			"array": "cpp",
+			"functional": "cpp",
+			"tuple": "cpp",
+			"type_traits": "cpp",
+			"utility": "cpp"
+		}
+	}
+}

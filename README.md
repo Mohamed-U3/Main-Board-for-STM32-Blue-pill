@@ -27,13 +27,13 @@ Standard SPI TFT display interface with power and control signals.
 ```
 Pin | Signal | STM32 Pin | Description
 ----|--------|-----------|-------------
-1   | VCC    | 3.3V      | Power supply
-2   | DC     | PA1       | Data/Command select
-3   | RES    | PA2       | Reset signal
-4   | CS     | PA4       | Chip Select
-5   | CLK    | PA5       | SPI Clock (SPI1_SCK)
-6   | EN     | PA3	 | Backlight control (always on)
-7   | MOSI   | PA7       | SPI Data Out (SPI1_MOSI)
+1   | CS     | PA4       | SPI Chip Select
+2   | BLK    | PA3       | Backlight control (PWM)
+3   | DC     | PA1       | Data/Command select
+4   | RES    | PA2       | Reset signal
+5   | MOSI   | PA7       | SPI Data Out (SPI1_MOSI)
+6   | CLK    | PA5       | SPI Clock (SPI1_SCK)
+7   | VCC    | 3.3V      | Power supply
 8   | GND    | GND       | Ground
 ```
 
@@ -225,6 +225,7 @@ All 10 buttons are configured for **internal pull-up** operation:
 // PA4 - CS (Chip Select)
 // PA1 - DC (Data/Command)
 // PA2 - RES (Reset)
+// PA3 - Backlight control (PWM)
 ```
 
 ### Sensor Interface
@@ -258,10 +259,10 @@ All 10 buttons are configured for **internal pull-up** operation:
 - **Input Voltage**: 5V via USB or external supply
 - **Logic Level**: 3.3V (regulated by Blue Pill)
 - **Current Consumption**:
-  - MCU: ~10mA (active)
-  - TFT Display: 20-100mA (depending on size and backlight)
+  - MCU: ~10mA
+  - TFT Display: 20-100mA
   - Sensors: 1-10mA each
-  - LRF Module: 50-200mA (measurement dependent)
+  - LRF Module: 50-700mA
 
 ## 🛠️ Troubleshooting
 
@@ -321,6 +322,7 @@ Contributions are welcome! Please feel free to submit:
 - **v2.0** - Updated connector layout, pin assignments, and silkscreen.
 - **v3.0** - Change the EN pin of the TFT from Vcc for full brightness always to be controlled via GPIO A6.
 - **v3.1** - Change the EN pin of the TFT to A3 because A6 is MISO pin.
+- **v3.2** - Change the Rounting of Tracks and the silkscreen.
 
 ## 📞 Support
 
